@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 interface SearchBarInputProps {
     input: string;
     onInputChange: (text: string) => void; 

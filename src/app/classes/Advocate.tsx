@@ -1,5 +1,3 @@
-import { spec } from "node:test/reporters";
-
 export default class Advocate {
     firstName: string;
     lastName: string;
@@ -20,7 +18,7 @@ export default class Advocate {
     }
 
     private static formatPhoneNumber(phoneNumber: string): string {
-        return phoneNumber.replace(/\D+/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
+        return phoneNumber.toString().replace(/\D+/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
     }
 
     private static formatSpecialties(specialties: string[]): string { 
